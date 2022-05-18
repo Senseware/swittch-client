@@ -9,7 +9,7 @@ help:
 	@echo "  Development:"
 	@echo "    $(CYAN)init$(CLEAR): Setup the development environment."
 	@echo "    $(CYAN)build$(CLEAR): Build the package"
-	@echo "    $(CYAN)publish$(CLEAR): Publish to PyPi."
+	@echo "    $(CYAN)push$(CLEAR): Push the build to PyPi."
 	@echo ""
 
 init:
@@ -18,5 +18,5 @@ init:
 build:
 	python -m build
 
-publish:
+push:
 	twine upload -r pypi dist/*
